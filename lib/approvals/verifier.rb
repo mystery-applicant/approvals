@@ -1,9 +1,11 @@
 require 'approvals/verifiers/json_verifier'
+require 'approvals/verifiers/yaml_verifier'
 
 module Approvals
   module Verifier
     REGISTRY = {
       json: Verifiers::JsonVerifier,
+      yaml: Verifiers::YamlVerifier,
     }
 
     class << self
